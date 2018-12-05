@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Codigo_de_Empresa__c</fullName>
+    <description>Código da Empresa para a qual o beneficiário está sendo incluído. Não é obrigatório na criação do registro, porem para gerar o TXT de carga é obrigatório.</description>
+    <externalId>false</externalId>
+    <label>Código de Empresa</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

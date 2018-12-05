@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Codigo_de_Contrato__c</fullName>
+    <description>Código do contrato para o qual o beneficiário está sendo cadastro. campo utilizado na geração do TXT, não sendo obrigatorio na criação, porem é obrigatório para gerar um TXT.</description>
+    <externalId>false</externalId>
+    <label>Código de Contrato</label>
+    <precision>12</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

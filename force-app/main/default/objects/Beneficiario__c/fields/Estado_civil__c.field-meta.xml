@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estado_civil__c</fullName>
+    <description>Estado civil do beneficiário que está sendo incluído.</description>
+    <externalId>false</externalId>
+    <label>Estado civil</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solteiro</fullName>
+                <default>true</default>
+                <label>Solteiro</label>
+            </value>
+            <value>
+                <fullName>Casado</fullName>
+                <default>false</default>
+                <label>Casado</label>
+            </value>
+            <value>
+                <fullName>Viúvo</fullName>
+                <default>false</default>
+                <label>Viúvo</label>
+            </value>
+            <value>
+                <fullName>Divorciado</fullName>
+                <default>false</default>
+                <label>Divorciado</label>
+            </value>
+            <value>
+                <fullName>Desquitado</fullName>
+                <default>false</default>
+                <label>Desquitado</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
