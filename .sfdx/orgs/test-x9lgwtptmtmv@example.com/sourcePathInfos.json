@@ -32,28 +32,28 @@
     [
         "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default",
             "isDirectory": true,
-            "size": 0,
-            "modifiedTime": 1544044309432,
-            "changeTime": 1544044309432,
-            "contentHash": "4f090b12d069ab492a48d0da355988187018b1a5",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 0,
+            "modifiedTime": 1544114609044,
+            "changeTime": 1544114609044,
+            "contentHash": "d42f7fbbed1659a5665d5881fd2a4ef8dde3afa0"
         }
     ],
     [
         "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\aura",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\aura",
             "isDirectory": true,
-            "isMetadataFile": false,
             "size": 0,
             "modifiedTime": 1544105082934,
             "changeTime": 1544105082934,
-            "isWorkspace": false,
-            "contentHash": "707f89b5d0bc3b8e6662f745ca676f3ca8c57354"
+            "contentHash": "707f89b5d0bc3b8e6662f745ca676f3ca8c57354",
+            "isMetadataFile": false,
+            "state": "u",
+            "isWorkspace": false
         }
     ],
     [
@@ -477,14 +477,14 @@
     [
         "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\layouts",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\layouts",
             "isDirectory": true,
-            "size": 0,
-            "modifiedTime": 1544044309407,
-            "changeTime": 1544044309407,
-            "contentHash": "4fd525fc62e2f16a766841e14d9c907cf1041197",
             "isMetadataFile": false,
-            "state": "u"
+            "size": 0,
+            "modifiedTime": 1544114609038,
+            "changeTime": 1544114609038,
+            "contentHash": "2338397a76469802d4a686a27743c1e64b3c9770"
         }
     ],
     [
@@ -672,14 +672,14 @@
     [
         "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\aura\\Inclusao_Adesao_Promotor\\Inclusao_Adesao_Promotor.cmp",
         {
-            "state": "u",
             "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\aura\\Inclusao_Adesao_Promotor\\Inclusao_Adesao_Promotor.cmp",
             "isDirectory": false,
-            "isMetadataFile": false,
             "size": 1879,
             "modifiedTime": 1544107623572,
             "changeTime": 1544107623572,
-            "contentHash": "4d386008a8a4a4a9eb231d7e0fa77668a796c0da"
+            "contentHash": "4d386008a8a4a4a9eb231d7e0fa77668a796c0da",
+            "isMetadataFile": false,
+            "state": "u"
         }
     ],
     [
@@ -888,6 +888,45 @@
             "contentHash": "8b79b016f08440c9b2f7d706a6d21229c854540b",
             "isMetadataFile": false,
             "state": "u"
+        }
+    ],
+    [
+        "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\layouts\\Opportunity-Opportunity Layout.layout-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\layouts\\Opportunity-Opportunity Layout.layout-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 12759,
+            "modifiedTime": 1544114609039,
+            "changeTime": 1544114609039,
+            "contentHash": "ca34ef26d1c13041949104ecf7cfb0650bdd012b"
+        }
+    ],
+    [
+        "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\quickActions\\Opportunity.Inclusao.quickAction-meta.xml",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\quickActions\\Opportunity.Inclusao.quickAction-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 357,
+            "modifiedTime": 1544114609046,
+            "changeTime": 1544114609046,
+            "contentHash": "0ba1298b170ec80d28b64424c005deff85bfdd49"
+        }
+    ],
+    [
+        "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\quickActions",
+        {
+            "state": "u",
+            "sourcePath": "C:\\Users\\u019894\\Documents\\workspace\\AplicativoBeneficiario\\force-app\\main\\default\\quickActions",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1544114609045,
+            "changeTime": 1544114609045,
+            "contentHash": "cd9876a8d5390b50b6b2f5c3b462d4c821244195"
         }
     ]
 ]

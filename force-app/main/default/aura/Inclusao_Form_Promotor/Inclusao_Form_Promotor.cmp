@@ -61,6 +61,123 @@
                 </lightning:layoutItem>
             </lightning:layout>
         </aura:if>
+        <aura:if isTrue="{!v.rendeForm == 3}">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem>
+                    <lightning:input aura:id="rgField" 
+                                label="RG"
+                                name="rdBenef"
+                                value=""
+                                />
+                    <lightning:input aura:id="dtExpRgField" 
+                                label="Data de Expedição"
+                                type="date"
+                                name="beneficiarioDataDeExpedicao"
+                                value=""
+                                />
+                </lightning:layoutItem>
+                <lightning:layoutItem>
+                    <lightning:input aura:id="orgExpField" 
+                                label="Orgão Expedidor"
+                                name="orgExpBenef"
+                                value=""
+                                maxlength="10"
+                                />
+                    <lightning:input aura:id="ufExpField" label="Uf expedidor"
+                                name="efExpBenef"
+                                value=""
+                                maxlength="2"
+                                />
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+        <aura:if isTrue="{!v.controleRender == 5}">
+            <lightning:select aura:id="depenField" label="Dependência" name="depenBenef">
+                <aura:iteration items="" var="depenItens">
+                    <option label="">VIEW INFO AQUI</option>
+                </aura:iteration>
+            </lightning:select>
+            <lightning:select aura:id="parentField" name="parentBenef">
+                <aura:iteration items="" var="parentItens">
+                    <option value="">VIEW INFO AQUI</option>
+                </aura:iteration>
+            </lightning:select>
+        </aura:if>
+        <!--Produtos Adquiridos  plano, opcional-->
+        <aura:if isTrue="{!v.controleRender == 5}">
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem>
+                    <lightning:select aura:id="planField" label="Plano" name="planBenef"><!--ADD ACTION AQUI-->
+                        <aura:iteration items="" var="planItens">
+                            <option value="">VIEW INFO AQUI</option>
+                        </aura:iteration>
+                    
+                    <lightning:select aura:id="opcField" label="Opcional" name="opcBenef"><!--ADD ACTION AQUI-->
+                        <aura:iteration items="" var="opcItens">
+                            <option value="">VIEW INFO AQUI</option>
+                        </aura:iteration>    
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:layoutItem>
+                    Valor Plano: <ui:outputText value=""/> <!--ADICIONAR AURA ID OU MUDAR CMP-->
+                    Valor Opcional: <ui:outputText value=""/> <!--ADICIONAR AURA ID OU MUDAR CMP-->
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+        <aura:if isTrue="{!v.controleRender == 6}">
+            <lightning:input aura:id="emailField"
+                        label="Email"
+                        type="email"
+                        name="emailBenef"
+                        value=""
+                        />
+            <lightning:input aura:id="celField" label="Celular"
+                        type="tel"
+                        name="celBenef"
+                        value=""
+                        />
+        </aura:if>
+        <!--CAMPO QUE CHAMA O SERVIÇO DE CEP-->
+        <aura:if isTrue="{!v.controleRender == 7}">
+            <lightning:input aura:id="beneficiarioCep" label="Cep"
+                        name="beneficiarioCep"
+                        maxlength="8"
+                        value=""
+                        />
+        </aura:if>
+        <aura:if isTrue="{!v.controleRender == 8}">
+            <lightning:input aura:id="logEndField" label="Logradouro"
+                        name="logEndBenef"
+                        maxlength="150"
+                        value=""
+                        />
+            <lightning:input aura:id="numEndField" label="Numero"
+                        name="numEndField"
+                        maxlength="9"
+                        value=""
+                        />
+            <lightning:input aura:id="compEndField" label="Complemento"
+                        name="CompEndBenef"
+                        maxlength="150"
+                        value=""
+                        />
+            <lightning:input aura:id="bairEndField" label="Bairro"
+                        name="BairEndbenef"
+                        maxlength = "60"
+                        value=""
+                        />
+            <lightning:input aura:id="cidEndField" label="Cidade"
+                        name="cidEndBenef"
+                        maxlength="60"
+                        value=""
+                        />
+            <lightning:input aura:id="ufEndField" label="Uf"
+                        name="ufEndBenef"
+                        maxlength="2"
+                        value=""
+                        />
+        </aura:if>
+
     </form>
 
 </aura:component>	
