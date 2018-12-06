@@ -1,0 +1,33 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome"
+                access="global">
+    <aura:attribute name="oppData" type="Object"/>
+    <aura:attribute name="controleOperacao" type="Integer" default="1"/>
+    <aura:attribute name="renderLoadingComponent" type="Boolean" default="false"/>
+    <force:recordData aura:id="oppRegistro"
+                    layoutType="FULL"
+                    targetFields="{!v.oppData}"
+                    mode="VIEW"/>
+
+    <lightning:layout>
+        <lightning:layoutItem flexibility="auto" padding="around-small">
+            <lightning:tabset aura:id="tabs" variant="scoped" selectedTabId="one">
+                <lightning:tab id="one" label="Cadastro Beneficiario" onactive="">
+                    <fieldset class="slds-box slds-theme--default slds-container--small">
+                        <legend id="legendBeneficiario" class="slds-text-heading--small slds-p-vertical--medium">
+                            Incluir Beneficiáiro
+                        </legend>
+                        <form class="slds-form--stacked">
+                        <!-- Alertas de atualização de registro e Erro-->
+                        <lightning:notificationsLibrary aura:id="alertsBeneficiario"/>
+                                        <!--FIM-->
+                        <aura:if isTrue="{!v.renderLoadingComponent}">
+                                <lightning:spinner variant="brand"  size="large" />
+                        </aura:if>
+                        <c:Inclusao_Form_Promotor oppData="{!v.oppData}" controleOperacao="{!v.controleOperacao}"/>
+                        </form>
+                    </fieldset>
+                </lightning:tab>
+            </lightning:tabset>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>	

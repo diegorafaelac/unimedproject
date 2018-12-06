@@ -1,0 +1,66 @@
+<aura:component>
+    <aura:attribute name="oppData" type="Object"/>
+    <aura:attribute name="controleOperacao" type="Integer" default="1"/>
+    <aura:attribute name="rendeForm" type="Integer" default="1"/>
+
+    <aura:attribute name="estCivList" type="List" default="Solteiro, Casado, Viúvo, Divorciado, Desquitado, Outros"/>
+    <aura:attribute name="sexoList" type="List" default="Masculino,Feminino"/>
+
+    <form class="slds-form--stacked">
+        <aura:if isTrue="{!v.rendeForm == 1}">
+            <lightning:input aura:id="cpfField"
+                        label="CPF"
+                        maxlength="11"
+                        name="cpfBenef"
+                        value=""
+                        required="true"
+                        pattern="[0-9]{11}"/>
+        </aura:if>
+
+        <aura:if isTrue="{!v.rendeForm == 2}">
+            <lightning:input aura:id="nomeField" 
+                        label="Nome"
+                        name="nomeBenef"
+                        value=""
+                        required="true"/>
+
+            <lightning:input aura:id="nomeMaeField" 
+                        label="Nome da Mãe"
+                        name="nomeMae"
+                        value=""
+                        required="true"/>
+            <lightning:layout multipleRows="true">
+                <lightning:layoutItem>
+                    <lightning:input aura:id="dtNascField"
+                                label="Data de Nascimento"
+                                type="date"
+                                name="dtNascBenef"
+                                value=""
+                                required="true"/>
+            
+                    <lightning:select aura:id="estCivField" label="Estado Civil" name="estCivBenf" required="true">
+                            <aura:iteration items="{!v.estCivList}" var="estCivItens">
+                                <option value="{!estCivItens}">{!estCivItens}}</option>
+                            </aura:iteration>
+                    </lightning:select>                
+                </lightning:layoutItem>
+
+                <lightning:layoutItem>
+                    <lightning:input aura:id="idadeField"
+                            label="Idade"
+                            type="number"
+                            name="idadeBenef"
+                            value=""
+                            required="true"/>
+
+                    <lightning:select aura:id="sexoField" label="Sexo" name="sexoBenef" required="true">
+                            <aura:iteration items="{!v.sexoList}" var="sexoItens">
+                                <option value="{sexoItens}">{!sexoItens}</option>
+                            </aura:iteration>
+                    </lightning:select>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:if>
+    </form>
+
+</aura:component>	

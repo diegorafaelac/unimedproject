@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Titular__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Informa quem é o titular do registro, caso esteja vazio o beneficiário é o titular..</description>
+    <externalId>false</externalId>
+    <label>Titular</label>
+    <referenceTo>Beneficiario__c</referenceTo>
+    <relationshipLabel>Dependentes</relationshipLabel>
+    <relationshipName>Titular</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
